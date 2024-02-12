@@ -2,8 +2,8 @@
 
 for mongoDB:
 
-install docker
+- install docker
 
-go to project root folder
+- go to project root folder
 
-on terminal run: docker compose -f stack.yml up
+- on terminal run: docker compose -f stack.yml up

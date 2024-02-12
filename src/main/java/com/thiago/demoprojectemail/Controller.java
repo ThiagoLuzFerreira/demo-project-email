@@ -9,16 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/email")
 public class Controller {
 
-    @Value("${file.test}")
-    private String config;
-
     @GetMapping
     public String status(){
         return "ok";
-    }
-
-    @GetMapping("/configs")
-    public String getConfig(){
-        return config;
     }
 }

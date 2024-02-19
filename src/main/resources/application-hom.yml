@@ -3,14 +3,14 @@ spring:
     name: demo-project-email
   data:
     mongodb:
-      host: localhost
+      host: mongo
       port: 27017
       database: email-database
       username: root
       password: example
       authentication-database: admin
   rabbitmq:
-    host: localhost
+    host: rabbit-mq
     port: 5672
     username: guest
     password: guest

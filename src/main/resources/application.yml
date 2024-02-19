@@ -1,34 +1,3 @@
 spring:
-  application:
-    name: demo-project-email
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-      database: email-database
-      username: root
-      password: example
-      authentication-database: admin
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-  mail:
-    host: ${SPRING.MAIL.HOST}
-    port: ${SPRING.MAIL.PORT}
-    username: ${SPRING.MAIL.USERNAME}
-    password: ${SPRING.MAIL.PASSWORD}
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-
-server:
-  port: 8081
-
-mq:
-  queues:
-    email-queue: default-email-queue
+  profiles:
+    active: dev
